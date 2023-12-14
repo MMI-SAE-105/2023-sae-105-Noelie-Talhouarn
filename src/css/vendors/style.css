@@ -15,3 +15,7 @@
 
 /* Règles des composants */
 @import "components/button.css";
+
+/*police de caractère*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');
