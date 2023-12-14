@@ -1,19 +1,24 @@
-.infos__title{
-    margin-top: 0;
-    padding: 5%;
-}
-
-.infos__text{
-    margin-top: 0;
-    padding: 5%;
-}
-
-.infos__sous-titre{
-    margin top: 0;
-    padding: 5%;
-}
-
-.infos__link{
-    margin-top: 0;
-    padding: 5%;
-}
+#onglet > div {
+    position: relative;
+    height: 300px;
+    width: 300px;
+  }
+  [role=tabpanel] {
+    position: absolute;
+    opacity: 0;
+  }
+  .actif {
+    opacity: 1;
+    transition: 1.5s;
+  }
+  li[role=tab] {
+    display: inline-block; /*pour que les éléments soient alignés horizontalement */
+    padding: 15px; /*pour espacer le contenu, padding de 15px */
+    background-color: #e180c7; 
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px; 
+    margin: 10px; /*pour espacer les éléments, marge de 10px */
+    cursor: pointer; /*pour qu'il s'affiche lorque le pointer de la sourit se trouver sur l'élement*/
+    text-decoration: none;
+    color:rgb(0, 0, 0)
+  }

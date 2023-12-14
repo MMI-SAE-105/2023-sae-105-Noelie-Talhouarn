@@ -1,70 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infos</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onglets</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="/src/css/vendors/styles.css">
-</head>
-<body>
-    <header>
-        <a href="/">
-        <img src="/public/icons/logo.svg" alt="logo">
-        </a>
-        <nav>
-            <button>
-                <span></span>
-            </button>
-            <ul>
-                <li><a href="/">Sou Fujimoto</a></li>
-                <li><a href="/">Œuvres architecturales</a></li>
-                <li><a href="/">Infos</a></li>
-            </ul>
-        </nav>
-    </header>
-<main>
-    <img src="/public/img/fondation-cartier-architecture-1.webp" alt="fonation cartier architecture">
-    <article class="infos">
-        <h1 class="infos__title">Infos</h1>
-        <a class="infos__link" href="#">Tarifs</a>
-        <a  class="infos__link" href="#">Horaires</a>
-    </article>
-    <article class="infos">
-        <h2 class="infos__sous-titre">Tarifs</h2>
-        <ul>
-            <li class="infos__list">plein tarif : 11€</li>
-            <li class="infos__list">tarif réduit : 7.50€</li>
-            <li class="infos__list">Réduction 13 - 25 ans : 5€</li>
-            <li class="infos__list">Fondation Cartier Pass : 18€ - 50€</li>
-            <li class="infos__list">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : Gratuit</li>
-        </ul>
-    </article>
-    <article>
-        <h2 class="infos__sous-titre">Horaires</h2>
-        <ul>
-            <li class="infos__list">lundi : Fermé</li>
-            <li class="infos__list">mardi : 11h - 22h</li>
-            <li class="infos__list">mercredi : 11h - 20h</li>
-            <li class="infos__list">jeudi : 11h - 20h</li>
-            <li class="infos__list">vendredi : 11h - 20h</li>
-            <li class="infos__list">samedi : 11h - 20h</li>
-            <li class="infos__list">dimanche : 11h - 20h</li>
-        </ul>
-        <p class="infos__text">La fermeture des salles débute 15 min avant la fermeture complète de l’exposition.</p>
-    </article>
-</main>
-<footer>
-    <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Infos</a></li>
-        <li><a href="#">Billetterie</a></li>
-    </ul>
-
-    <p>Joignez vous à nous pour une expérience immersive qui éveille votre fascination pour l'art de l'architecture contemporaine.</p>
-    <img src="/public/icons/logo.svg" alt="logo">
-    <p>Retrouvez nous sur les Réseaux Sociaux</p>
-    <img src="/public/icons/logo-insta-1.svg" alt="instagram">
-    <img src="/public/icons/logo-facebook-noir-1.svg" alt="facebook">
-</footer>
-</body>
+  
+  </head>
+  <body>
+    <h1>Onglets</h1>
+    <div id="onglets" x-data="{
+      ouvert : 1,
+    }">
+  <ul role="tablist">
+    <li role="tab" @click="ouvert=1">Onglet 1</li>
+    <li role="tab"  @click="ouvert=2">Onglet 2</li>
+    <li role="tab" @click="ouvert=3">Onglet 3</li>
+  </ul>
+  <div role="tabpanel" x-bind:class="{actif: ouvert === 1,}">
+  <h2>Panneaux 1</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non et at quaerat vitae sapiente rerum tempore incidunt nemo nulla repudiandae repellendus quasi provident expedita, minima assumenda in alias dolores impedit!</p>
+  </div>
+  <div role="tabpanel" x-bind:class="{actif: ouvert === 2,}">
+    <h2>Panneaux 2</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam similique quo omnis ipsam qui quidem! Voluptatem, cupiditate! Cupiditate modi adipisci aliquid nulla velit perspiciatis dolorem quas illo repellendus voluptatibus.</p>
+  </div>
+  <div role="tabpanel" x-bind:class="{actif: ouvert === 3,}">
+    <h2>Panneaux 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates vel ad, soluta, reiciendis fuga beatae repellat est quas optio eaque sit maxime aut laudantium tenetur ullam libero accusamus? A!</p>
+   </div>
+  </div>
+ </body>
 </html>
