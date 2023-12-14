@@ -1,20 +1,20 @@
 /* Librairies */
-@import "vedors/normalize.css";
+@import url('/src/css/vendors/normalize.css');
 
 /* Variables */
-@import "utils/variables.css";
+@import url('/src/css/utils/variables.css');
 
 /* Règles générales */
-@import "base/main.css";
-@import "base/media.css";
+@import url('/src/css/base/main.css');
+@import url('/src/css/base/media.css');
 
 /* Règles de layout */
-@import "layout/header.css";
-@import "layout/footer.css";
-@import "layout/section.css";
+@import url('/src/css/layout/footer.css');
+@import url('/src/css/layout/header.css');
+@import url('/src/css/layout/section.css');
 
 /* Règles des composants */
-@import "components/button.css";
+@import url('/src/css/components/menu.css');
 
 /*police de caractère*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
