@@ -1,0 +1,11 @@
+.header {
+    padding: 100px var(--space3x);
+}
+
+.header--bg {
+    background-color: var(--white);
+}
+
+.header__logo-link {
+    top: var;
+}
