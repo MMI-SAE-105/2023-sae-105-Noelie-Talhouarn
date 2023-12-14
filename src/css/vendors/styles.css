@@ -22,6 +22,7 @@
 @import '/src/css/components/oeuvre.css';
 @import '/src/css/components/gallery.css';
 @import '/src/css/components/carrousel.css';
+@import '/src/css/components/infos.css';
 
 /*police de caractère*/
 @import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');
