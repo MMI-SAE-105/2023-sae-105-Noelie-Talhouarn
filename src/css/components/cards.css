@@ -1,9 +1,9 @@
 .cards{
-    padding: 15%;
+    padding: 10%;
 }
 
 .cards__img{
-    width: 300px;
+    width: 400px;
     height: 300px;
     align-items: center;
     justify-content: center;
@@ -16,5 +16,17 @@
     color: #000;
     font-weight: 400;
     line-height: 160%;
+    background-color: var(--couleur-secondaire);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+.cards__quote{
+    font-family: Inter;
+    font-size: 25px;
+   
+    
     
 }
