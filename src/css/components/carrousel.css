@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box; /* change le box model */
-} 
+
 img {
     max-width: 100%; /* image responsive, largeur maxi */
     height: 380px; /* hauteur "auto" */

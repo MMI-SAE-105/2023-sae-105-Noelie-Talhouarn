@@ -9,12 +9,12 @@
 @import url('/src/css/base/media.css');
 
 /* Règles de layout */
-@import url('/src/css/layout/footer.css');
+@import '/src/css/layout/footer.css';
 @import url('/src/css/layout/header.css');
 @import url('/src/css/layout/section.css');
 
 /* Règles des composants */
-@import url('/src/css/components/menu.css');
+@import url('/src/css/components/menu.css';
 @import '/src/css/components/cards.css';
 @import '/src/css/components/intro.css';
 @import '/src/css/components/architecte.css';
