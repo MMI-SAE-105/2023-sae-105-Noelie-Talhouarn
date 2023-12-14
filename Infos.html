@@ -10,27 +10,37 @@
   
   </head>
   <body>
-    <h1>Onglets</h1>
+    <h1 class="infos__title">Infos</h1>
+    <p class="infos__text">Découvrez nos tarifs abordables et les horaires flexibles qui vous permettront de plonger dans l'innovation architecturale à votre convenance</p>
     <div id="onglets" x-data="{
       ouvert : 1,
     }">
-  <ul role="tablist">
-    <li role="tab" @click="ouvert=1">Onglet 1</li>
-    <li role="tab"  @click="ouvert=2">Onglet 2</li>
-    <li role="tab" @click="ouvert=3">Onglet 3</li>
+  <ul role="tablist" class="infos__list">
+    <li role="tab" @click="ouvert=1">Tarifs</li>
+    <li role="tab"  @click="ouvert=2">Horaires</li>
   </ul>
-  <div role="tabpanel" x-bind:class="{actif: ouvert === 1,}">
-  <h2>Panneaux 1</h2>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non et at quaerat vitae sapiente rerum tempore incidunt nemo nulla repudiandae repellendus quasi provident expedita, minima assumenda in alias dolores impedit!</p>
+    <div role="tabpanel" x-bind:class="{actif: ouvert === 1,}">
+    <h2 class="infos__sous-titre">Tarifs</h2>
+    <ul>
+        <li class="infos__list">plein tarif : 11€</li>
+        <li class="infos__list">Tarif réduit : 7.50€</li>
+        <li class="infos__list">Fondation Cartier Pass : 18€-50€</li>  
+        <li class="infos__list">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : Gratuit</li>
+    </ul>
+    </div>
+    <div role="tabpanel" x-bind:class="{actif: ouvert === 2,}">
+    <h2>Horaire</h2>
+    <ul>
+        <li class="infos__list">Lunfi : Fermé</li>
+        <li class="infos__list">Mardi : 11h - 22h</li>
+        <li class="infos__list">Mercredi : 11h - 20h</li>  
+        <li class="infos__list">Jeudi : 11 - 20h</li>
+        <li class="infos__list">Vendredi : 11h - 20h</li>
+        <li class="infos__list">Samedi : 11h - 20h</li>
+        <li class="infos__list">Dimanche : 11h - 20h</li>
+      </ul>   
+    <p class="infos__text">La fermeture des salles débute 15 min avant la fermeture complète de l’exposition.</p>
   </div>
-  <div role="tabpanel" x-bind:class="{actif: ouvert === 2,}">
-    <h2>Panneaux 2</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam aliquam similique quo omnis ipsam qui quidem! Voluptatem, cupiditate! Cupiditate modi adipisci aliquid nulla velit perspiciatis dolorem quas illo repellendus voluptatibus.</p>
-  </div>
-  <div role="tabpanel" x-bind:class="{actif: ouvert === 3,}">
-    <h2>Panneaux 3</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates vel ad, soluta, reiciendis fuga beatae repellat est quas optio eaque sit maxime aut laudantium tenetur ullam libero accusamus? A!</p>
-   </div>
   </div>
  </body>
 </html>
