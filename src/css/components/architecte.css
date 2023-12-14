@@ -1,0 +1,33 @@
+
+.architecte__img{
+    opacity: 0.9;
+}
+
+.architecte__title{
+    margin: 0;   
+    padding: 1.5;
+    padding-left: 5%;
+}
+
+.architecte__sous-titre{
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 25px;
+    padding: 5%;
+}
+
+.architecte__text{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 5%;
+}
+
+.architecte__intertitre{
+    font-family: 'inter', sans-serif;
+    font-size: 18px;
+    margin-top: 0;
+    margin: 0;
+    padding: 5%;
+}
+
