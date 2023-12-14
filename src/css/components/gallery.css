@@ -6,7 +6,7 @@
     left: 0;/* Stay at the left */
     right: 0;/* Stay at the right */
     bottom: 0;/* Stay at the bottom */
-    background-color: rgba(0, 0, 0, 0.9);/* Black background with opacity */
+    background-color: rgba(168, 167, 167, 0.93); /* fond gris avec opacité */
     cursor: pointer;/* Add a pointer on hover */
     display: grid; /* Use a grid for easy centering */
     place-content: center;/* Center vertically and horizontally */
@@ -14,8 +14,8 @@
 }
 .overlay::after {
     content: "X";/* Add content : "X" */ 
-    color: white;/* White text color */
-    background-color: black;/* Black background color */
+    color: rgb(0, 0, 0);/* White text color */
+    background-color: var(--couleur-secondaire);/* Black background color */
     font-family: sans-serif;/* Font family "sans-serif" */
     text-align: center;/* Centered text */
     line-height: 2rem;/* Line height ( idem height ) */
@@ -25,7 +25,7 @@
     right: 1rem;/* 1rem from the right */
     width: 2rem;/* 2rem width */
     height: 2rem;/* 2rem height */
-    border: 2px solid white;/* White border of 2px */
+    border: 2px solid rgb(0, 0, 0);/* White border of 2px */
     border-radius: 50%;/* Rounded border */
     
 }
@@ -33,27 +33,33 @@
 .overlay>figure {
     margin: 0;/* No margin */
     padding: 1rem;/* 1rem padding */
-    border: 2px solid white;/* White border of 2px */
+    border: 2px solid rgb(0, 0, 0);/* White border of 2px */
 }
 
 .overlay>figure>img {
     max-width: 100%;/* Max width 100% for responsive image */
     height: auto;/* Height auto for keeping the ratio */
 }
-.gallery__title {
-    text-align: center;  
-    color: rgb(3, 3, 3);
-    font-size: 40px;
-    background-color: rgb(191, 186, 155);
+.gallery__title { 
     margin: 0;
+    padding: 5%;
 }
 .gallery__img {
+    font-size: 70px;
     margin: 10px;
     padding: 3px;
     border: 2px solid black;
-    height: 100px;
+    height: 140px;
+}
+
+.gallery__text {
+    margin-top: 0;
+    padding: 5%;
+    
+    
 
 }
 body {
-    background-color: rgb(225, 219, 187);
+    padding: 10%;
+    align-items: center;
 }
