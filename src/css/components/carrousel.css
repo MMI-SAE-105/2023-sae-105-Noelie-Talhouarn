@@ -3,7 +3,8 @@
 } 
 img {
     max-width: 100%; /* image responsive, largeur maxi */
-    height: auto; /* hauteur "auto" */
+    height: 380px; /* hauteur "auto" */
+    
 
 }
 .carrousel_parent-ecrans {
@@ -27,7 +28,7 @@ img {
     flex-direction: column; /* aligne les enfants verticalement */
     text-decoration: none; /* enlève le soulignement par défaut */
     color: rgb(6, 6, 6); /* couleur du texte */
-    background-color: rgb(237, 229, 229);
+    background-color: rgb(255, 255, 255);
     gap: 0.5rem; /* espace entre les enfants */
 }
 .carrousel {
@@ -38,7 +39,7 @@ img {
   position: absolute;
   top: 50%;
   top: calc(
-    min(400px, 100vw) / 16 * 9 / 2 + 1rem
+    min(400px, 100vw) / 16 * 9 / 2 + 5rem
   ); /* centre verticalement ~50% vertical */
   transform: translateY(-50%); /* methode du point mort */
   width: 2rem;
@@ -52,34 +53,41 @@ img {
 }
 
 .carrousel_btn-avant {
-  left: 6px;
+  left: 25px;
 }
 
 .carrousel_btn-apres {
-  right: 6px;
+  right: 25px;
 }
 .caroussel_liste-liens {
     display: flex; /* aligne horizontalement les enfants */
     justify-content: center; /* centre horizontalement les enfants */
+    flex-wrap: wrap; /* permet aux enfants de se déplacer sur une nouvelle ligne si nécessaire */
     margin: 0; /* enlève les marges par défaut */
     padding: 0; /* enlève les padding par défaut */
     list-style: none; /* enlève les puces par défaut */
     gap: 1rem; /* espace entre les enfants */
 }
-.caroussel_lien {
-    display: inline-block; /* permet de mettre les enfants sur une ligne */
-    padding: 8px; /* espace entre le texte et le bord */
-    border: 2px solid rgb(0, 0, 0); /* bordure */
-    border-radius: 0.5rem; /* arrondi de la bordure */
+
+ .carrousel_lien{
+    padding: 0.5rem; /* padding haut/bas et gauche/droite */
+    background-color: var(--couleur-secondaire);
+    border-radius: 0.5rem; /* arrondi les coins */
     text-decoration: none; /* enlève le soulignement par défaut */
-    color: rgb(237, 229, 229); /* couleur du texte */
-    background-color: rgb(2, 2, 2);
-}
+    color: rgb(0, 0, 0); /* couleur du texte */
+    font-size: 1rem; /* taille du texte */
+    font-weight: 500; /* graisse du texte */
+    margin: 3px;
+ }
+
+    
 .actif {
-   background-color: rgb(237, 229, 229);
+  padding: 0.5rem;
+   background-color: rgb(0, 0, 0);
    text-decoration: none; /* enlève le soulignement par défaut */
-   color: rgb(0, 0, 0); /* couleur du texte */    
+   color: rgb(255, 255, 255); /* couleur du texte */    
 }
+
 .titre {
     text-align: center;
     color: rgb(0, 0, 0);

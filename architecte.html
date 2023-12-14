@@ -50,7 +50,7 @@
             <div class="carrousel">
                 <p class="carrousel__sous-titre">Explorez la diversité des créations de Sou Fujimoto dans un voyage visuel captivant grâce à notre carrousel exclusif</p>
                 <div class="carrousel" x-data="{
-                   hrefCourant: '#ecran-1', 
+                   hrefCourant: '#oeuvre-1', 
                 }">
                     <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                         @click="$refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
@@ -70,59 +70,66 @@
                                        .id
                     "
                     >
-                        <div id="Oeuvre-2" class="carrousel_ecran">
+                        <div id="oeuvre-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="/public/img/oeuvre-8-g.webp" alt="image Oeuvre 2">
+                                <figcaption>House before House, Utsunomiya, 2009</figcaption>
+                        </figure>
+                        </div>
+                        <div id="oeuvre-2" class="carrousel_ecran">
                             <figure>
                                 <img src="/public/img/oeuvre-1-g.webp" alt="image Oeuvre 2">
                                 <figcaption>House before House, Utsunomiya, 2009</figcaption>
                             </figure>
                         </div>
-                        <div id="Oeuvre-3" class="carrousel_ecran">
+                        <div id="oeuvre-3" class="carrousel_ecran">
                             <figure>
                                 <img src="/public/img/oeuvre-2-g.webp" alt="image Oeuvre 3">
                                 <figcaption>Toilet in Nature, Chiba, Japan, 2012</figcaption>
                             </figure>
                         </div>
-                        <div id="Oeuvre-4" class="carrousel_ecran">
+                        <div id="oeuvre-4" class="carrousel_ecran">
                             <figure>
                                 <img src="/public/img/oeuvre-3-g.webp" alt="image Oeuvre 4">
                                 <figcaption>Serpentine  Gallery Pavillon, London, 2013</figcaption>
                             </figure>
                         </div>
-                        <div id="Oeuvre-5" class="carrousel_ecran">
+                        <div id="oeuvre-5" class="carrousel_ecran">
                             <figure>
                                 <img src="/public/img/oeuvre-4-g.webp" alt="image Oeuvre 5">
                                 <figcaption>Many Small Cubes, jardin des Tuileries, France, 2014</figcaption>
                             </figure>
                         </div>
-                        <div id="Oeuvre-6" class="carrousel_ecran">
+                        <div id="oeuvre-6" class="carrousel_ecran">
                             <figure>
                                 <img src="/public/img/oeuvre-5-g.webp" alt="image Oeuvre 6">
                                 <figcaption>L'Arbre Blanc, Montpellier, France, 2017</figcaption>
                             </figure>
                         </div>
-                        <div id="Oeuvre-7" class="carrousel_ecran">
+                        <div id="oeuvre-7" class="carrousel_ecran">
                             <figure>
                                 <img src="/public/img/oeuvre-6-g.webp" alt="image Oeuvre 7">
                                 <figcaption>House of Hungarian Music, Budapest, Hungary, 2022</figcaption>
                             </figure>
                         </div>
-                        <div id="Oeuvre-8" class="carrousel_ecran">
+                        <div id="oeuvre-8" class="carrousel_ecran">
                             <figure>
                                 <img src="/public/img/oeuvre-7-g.webp" alt="image Oeuvre 8">
                                 <figcaption>Mille Arbres (A Thousand Trees), Paris, France, 2016-2023</figcaption>
                             </figure>
                     </div>
-                    <ul class="carroussel_liste-liens">
-                        <li><a href="#oeuvre-1" class="carroussel_lien">Oeuvre 1</a></li>
-                        <li><a href="#oeuvre-2" class="carroussel_lien">Oeuvre 2</a></li>
-                        <li><a href="#oeuvre-3" class="carroussel_lien">Oeuvre 3</a></li>
-                        <li><a href="#oeuvre-4" class="carroussel_lien">Oeuvre 4</a></li>
-                        <li><a href="#oeuvre-5" class="carroussel_lien">Oeuvre 5</a></li>
-                        <li><a href="#oeuvre-6" class="carroussel_lien">Oeuvre 6</a></li>
-                        <li><a href="#oeuvre-7" class="carroussel_lien">Oeuvre 7</a></li>
-                        <li><a href="#oeuvre-8" class="carroussel_lien">Oeuvre 8</a></li>
-                    </ul>
                 </div>
+                <ul class="caroussel_liste-liens">
+                    <li><a href="#oeuvre-1" :class="{actif:hrefCourant==='#oeuvre-1'}" class="carrousel_lien">Oeuvre 1</a></li>
+                    <li><a href="#oeuvre-2" :class="{actif:hrefCourant==='#oeuvre-2'}" class="carrousel_lien">Oeuvre 2</a></li>
+                    <li><a href="#oeuvre-3" :class="{actif:hrefCourant==='#oeuvre-3'}" class="carrousel_lien">Oeuvre 3</a></li>
+                    <li><a href="#oeuvre-4" :class="{actif:hrefCourant==='#oeuvre-4'}" class="carrousel_lien">Oeuvre 4</a></li>
+                    <li><a href="#oeuvre-5" :class="{actif:hrefCourant==='#oeuvre-5'}" class="carrousel_lien">Oeuvre 5</a></li>
+                    <li><a href="#oeuvre-6" :class="{actif:hrefCourant==='#oeuvre-6'}" class="carrousel_lien">Oeuvre 6</a></li>
+                    <li><a href="#oeuvre-7" :class="{actif:hrefCourant==='#oeuvre-7'}" class="carrousel_lien">Oeuvre 7</a></li>
+                    <li><a href="#oeuvre-8" :class="{actif:hrefCourant==='#oeuvre-8'}" class="carrousel_lien">Oeuvre 8</a></li>
+                </ul>
+            </div>
             </article>
         </section>
     </main>
