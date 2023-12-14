@@ -16,6 +16,7 @@
 /* Règles des composants */
 @import url('/src/css/components/menu.css');
 @import '/src/css/components/cards.css';
+@import '/src/css/components/intro.css';
 
 /*police de caractère*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
