@@ -1,0 +1,18 @@
+.oeuvre{
+    padding: 5%;
+}
+
+.oeuvre__title{
+    margin: 0;   
+    padding: 1%;
+}
+
+.oeuvre__text{
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
+
+.oeuvre__img{
+    margin-bottom: 9%;
+}
