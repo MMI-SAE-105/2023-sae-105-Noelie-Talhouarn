@@ -9,19 +9,19 @@
 @import url('/src/css/base/media.css');
 
 /* Règles de layout */
-@import '/src/css/layout/footer.css';
+@import url('/src/css/layout/footer.css');
 @import url('/src/css/layout/header.css');
 @import url('/src/css/layout/section.css');
 
 /* Règles des composants */
-@import url('/src/css/components/menu.css';
+@import url('/src/css/components/menu.css');
 @import '/src/css/components/cards.css';
 @import '/src/css/components/intro.css';
 @import '/src/css/components/architecte.css';
 @import '/src/css/components/formulaire.css';
 @import '/src/css/components/oeuvre.css';
-@import '/src/css/components/carrousel.css';
 @import '/src/css/components/gallery.css';
+@import '/src/css/components/carrousel.css';
 
 /*police de caractère*/
 @import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&display=swap');

@@ -1,5 +1,5 @@
 
-img {
+.carrousel img {
     max-width: 100%; /* image responsive, largeur maxi */
     height: 380px; /* hauteur "auto" */
     
@@ -75,7 +75,7 @@ img {
     color: rgb(0, 0, 0); /* couleur du texte */
     font-size: 1rem; /* taille du texte */
     font-weight: 500; /* graisse du texte */
-    margin: 3px;
+    
  }
 
     
@@ -84,11 +84,6 @@ img {
    background-color: rgb(0, 0, 0);
    text-decoration: none; /* enlève le soulignement par défaut */
    color: rgb(255, 255, 255); /* couleur du texte */    
-}
-
-.titre {
-    text-align: center;
-    color: rgb(0, 0, 0);
 }
 
 .carrousel__sous-titre{
@@ -101,4 +96,5 @@ img {
 .carrousel__text{
   font-family: 'inter';
   font-size: 16px;
+  padding: 3%;
 }
