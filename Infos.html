@@ -42,30 +42,30 @@
       ouvert : 1,
     }">
   <ul role="tablist" class="infos__list">
-    <li role="tab" @click="ouvert=1">Tarifs</li>
-    <li role="tab"  @click="ouvert=2">Horaires</li>
+    <li role="tab" @click="ouvert=1">Horaires</li>
+    <li role="tab"  @click="ouvert=2">Tarifs</li>
   </ul>
     <div role="tabpanel" x-bind:class="{actif: ouvert === 1,}">
-    <h2 class="infos__sous-titre">Tarifs</h2>
+      <h2 class="infos__sous-titre">Horaires</h2>
+      <ul>
+          <li class="infos__list">Lundi : Fermé</li>
+          <li class="infos__list">Mardi : 11h - 22h</li>
+          <li class="infos__list">Mercredi : 11h - 20h</li>  
+          <li class="infos__list">Jeudi : 11 - 20h</li>
+          <li class="infos__list">Vendredi : 11h - 20h</li>
+          <li class="infos__list">Samedi : 11h - 20h</li>
+          <li class="infos__list">Dimanche : 11h - 20h</li>
+        </ul> 
+        <p class="infos__text">La fermeture des salles débute 15 min avant la fermeture complète de l’exposition.</p>
+    </div>
+    <div role="tabpanel" x-bind:class="{actif: ouvert === 2,}">
+      <h2 class="infos__sous-titre">Tarifs</h2>
     <ul>
         <li class="infos__list">plein tarif : 11€</li>
         <li class="infos__list">Tarif réduit : 7.50€</li>
         <li class="infos__list">Fondation Cartier Pass : 18€-50€</li>  
         <li class="infos__list">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : Gratuit</li>
     </ul>
-    </div>
-    <div role="tabpanel" x-bind:class="{actif: ouvert === 2,}">
-    <h2 class="infos__sous-titre">Horaires</h2>
-    <ul>
-        <li class="infos__list">Lundi : Fermé</li>
-        <li class="infos__list">Mardi : 11h - 22h</li>
-        <li class="infos__list">Mercredi : 11h - 20h</li>  
-        <li class="infos__list">Jeudi : 11 - 20h</li>
-        <li class="infos__list">Vendredi : 11h - 20h</li>
-        <li class="infos__list">Samedi : 11h - 20h</li>
-        <li class="infos__list">Dimanche : 11h - 20h</li>
-      </ul>   
-    <p class="infos__text">La fermeture des salles débute 15 min avant la fermeture complète de l’exposition.</p>
   </div>
   </div>
   <footer class="footer">
