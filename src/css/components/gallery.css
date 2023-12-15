@@ -40,20 +40,42 @@
     max-width: 100%;/* Max width 100% for responsive image */
     height: auto;/* Height auto for keeping the ratio */
 }
+
 .gallery__title { 
     margin: 0;
     padding: 5%;
+    line-height: 1.1;
+    color: black;
+    text-decoration: underline
 }
 .gallery__img {
     font-size: 70px;
     margin: 10px;
     padding: 3px;
     border: 2px solid black;
-    height: 140px;
+    height: 300px;
+    text-align: center;
 }
 
 .gallery__text {
     margin-top: 0;
     padding: 5%;
-    
+    font-family: 'inter', sans-serif; 
+       
+}
+
+
+.gallery__content {
+    display: flex;
+    flex-direction: column; /* Ajouté - organise les éléments enfants en colonnes */
+    align-items: center; /* Ajouté - centre les éléments enfants horizontalement */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.gall
+
+.gallery{
+    margin-bottom: 2rem;
 }
