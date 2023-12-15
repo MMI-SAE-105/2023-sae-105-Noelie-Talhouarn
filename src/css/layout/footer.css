@@ -35,6 +35,8 @@
     background-color: #f2f2f2; /* couleur de fond */
     padding: 10px; /* espace autour du texte à l'intérieur du lien */
     margin: 5px; /* espace autour du lien */
+    color: black;
+    font-family: 'roboto', sans-serif;
 }
 
 .footer__item-2{
@@ -42,6 +44,8 @@
     background-color: #f2f2f2; /* couleur de fond */
     padding: 10px; /* espace autour du texte à l'intérieur du lien */
     margin: 5px; /* espace autour du lien */
+    color: black;
+    font-family: 'roboto', sans-serif;';
 }
 
 .footer__item-3{
@@ -49,6 +53,8 @@
     background-color: #f2f2f2; /* couleur de fond */
     padding: 10px; /* espace autour du texte à l'intérieur du lien */
     margin: 5px; /* espace autour du lien */
+    color: black;
+    font-family: 'roboto', sans-serif;
 }
 
     
