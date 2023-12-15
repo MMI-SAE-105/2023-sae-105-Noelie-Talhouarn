@@ -65,6 +65,8 @@
     padding: 0; /* enlève les padding par défaut */
     list-style: none; /* enlève les puces par défaut */
     gap: 1rem; /* espace entre les enfants */
+    margin-bottom: 13%;
+    font-family: 'inter', sans-serif;
 }
 
  .carrousel_lien{
