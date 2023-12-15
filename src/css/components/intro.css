@@ -1,3 +1,39 @@
 .intro{
     padding: 8%;
 }
+
+.intro__img-container {
+    position: relative;
+  }
+  
+.intro__overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .intro__title{
+    margin: 0;   
+    padding: 1%;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .intro__title--exposition{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 1%;
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 160%;
+    
+    color: #000000;
+}
+  
