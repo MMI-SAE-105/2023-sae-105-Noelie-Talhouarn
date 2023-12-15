@@ -1,6 +1,6 @@
 .footer {
    background-color: var(--couleur-secondaire); 
-   padding: var();
+   padding: 5%;
 }
 
 .footer__text {
@@ -11,7 +11,8 @@
 
 .footer__social {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     
    
 }
@@ -21,14 +22,33 @@
     margin: auto;
     justify-content: space-around;
     height: 70px;
+    
 }
 
 .footer__item{
     display: flex;
     justify-content: space-around;
-    
 }
 
+.footer__item-1{
+    text-decoration: none; /* enlève le soulignement */
+    background-color: #f2f2f2; /* couleur de fond */
+    padding: 10px; /* espace autour du texte à l'intérieur du lien */
+    margin: 5px; /* espace autour du lien */
+}
 
+.footer__item-2{
+    text-decoration: none; /* enlève le soulignement */
+    background-color: #f2f2f2; /* couleur de fond */
+    padding: 10px; /* espace autour du texte à l'intérieur du lien */
+    margin: 5px; /* espace autour du lien */
+}
+
+.footer__item-3{
+    text-decoration: none; /* enlève le soulignement */
+    background-color: #f2f2f2; /* couleur de fond */
+    padding: 10px; /* espace autour du texte à l'intérieur du lien */
+    margin: 5px; /* espace autour du lien */
+}
 
     
