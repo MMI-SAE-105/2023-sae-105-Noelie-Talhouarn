@@ -6,7 +6,6 @@
     right: 0;/* Stay at the right */
     bottom: 0;/* Stay at the bottom */
     background-color: rgba(168, 167, 167, 0.93); /* fond gris avec opacité */
-    width: 100%;
     position: fixed;
     cursor: pointer;/* Add a pointer on hover */
     display: grid; /* Use a grid for easy centering */

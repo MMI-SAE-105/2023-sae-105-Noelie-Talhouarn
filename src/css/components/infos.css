@@ -22,8 +22,6 @@
     border-radius: 15px; 
     margin:0px  45px; /*pour espacer les éléments, marge de 10px */
     cursor: pointer; /*pour qu'il s'affiche lorque le pointer de la sourit se trouver sur l'élement*/
-
-   
     color:rgb(0, 0, 0)
 }
 
