@@ -7,7 +7,9 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/vendors/styles.css">
 </head>
-<body x-data="{
+<body>
+<section class="gallery"
+x-data="{
     URLimage: 'public/img/oeuvre-1-g.webp', 
  }">
      <h1 class="gallery__title">Galerie</h1>
@@ -42,6 +44,7 @@
      @click="URLimage =null" @keyup.escape.window="URLimage = null">
      <figure><img :src="URLimage" alt="image 237... un chiot"></figure>
  </div>
+
  <footer class="footer">
     <div class="footer__item">
         <a class="footer__item-1" href="/contact.html">Contact</a>
@@ -59,6 +62,7 @@
             <img src="/public/icons/logo-insta-1.svg" alt="instagram">
         </a>
     </div>
+    </section>
 </footer>
  </body>
 </html>

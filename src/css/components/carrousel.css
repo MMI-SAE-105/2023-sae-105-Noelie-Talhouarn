@@ -81,9 +81,9 @@
     
 .actif {
   padding: 0.5rem;
-   background-color: black;
-   text-decoration: none; /* enlève le soulignement par défaut */
-   color: rgb(255, 251, 251); /* couleur du texte */    
+  background-color: black;
+  text-decoration: none; /* enlève le soulignement par défaut */
+  color: rgb(255, 251, 251); /* couleur du texte */    
 }
 
 .carrousel__sous-titre{
