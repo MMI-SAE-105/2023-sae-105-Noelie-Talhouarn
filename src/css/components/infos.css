@@ -4,21 +4,60 @@
     width: 300px;
   }
   [role=tabpanel] {
+    margin-top: 0.2%;
     position: absolute;
     opacity: 0;
   }
-  .actif {
+.actif {
+    background-color: transparent;
     opacity: 1;
-    transition: 1.5s;
+    
   }
   li[role=tab] {
+    margin-top: 0;
     display: inline-block; /*pour que les éléments soient alignés horizontalement */
     padding: 15px; /*pour espacer le contenu, padding de 15px */
-    background-color: #e180c7; 
+    background-color: #d9d9d9;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px; 
-    margin: 10px; /*pour espacer les éléments, marge de 10px */
+    margin: 45px; /*pour espacer les éléments, marge de 10px */
     cursor: pointer; /*pour qu'il s'affiche lorque le pointer de la sourit se trouver sur l'élement*/
-    text-decoration: none;
+
+   
     color:rgb(0, 0, 0)
-  }
+}
+
+.infos__text{
+    margin-top: 0.5%;
+    margin-bottom: 0;
+    padding: 5%;
+}
+
+.infos__title{
+    margin-bottom: 0;
+    padding: 5%;
+}
+
+.infos__list{
+    margin-left: 0.3%;
+    padding: 5%;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    color: #000;
+    list-style: none;
+}
+
+.infos__sous-titre{
+    margin-top: 0.5%;
+    margin-bottom: 0;
+    padding-left: 5%;
+    font-family: 'judson', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #000;
+    
+
+    
+}
