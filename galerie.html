@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Page d'accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="/src/css/vendors/styles.css">
 </head>
 <body>
+    <header class="header header--bg">
+        <a class="header__logo-link"href="/">
+        <img class="header__logo" src="/public/icons/logo.svg" alt="logo">
+        </a>
+        <a>
+        <img class="header__logo--menu" src="/public/icons/Hamburger.svg" alt="logo"
+        
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-bind:class="{'menu--open': menuIsOpen}"
+      id="mainNav" 
+      class="menu"
+      >
+        
+    <img class="header__close" src="/public/icons/Close.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+            
+    <ul class="menu__list">
+      <li><a class="menu__list--element" href="/architecte.html">Sou Fujimoto</a></li>
+      <li><a class="menu__list--element" href="/galerie.html">Œuvres architecturales</a></li>
+      <li><a class="menu__list--element" href="/Infos.html">Infos</a></li>
+      <li><a class="menu__list--element" href="/contact.html">Contact</a></li>
+  </ul>
+    </nav>
+</header>
 <section class="gallery"
 x-data="{
     URLimage: 'public/img/oeuvre-1-g.webp', 

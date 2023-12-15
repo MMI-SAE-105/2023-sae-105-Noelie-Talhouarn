@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onglets</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="/src/css/vendors/styles.css">
-  
-  </head>
-  <body>
+</head>
+<body>
+    <header class="header header--bg">
+        <a class="header__logo-link"href="/">
+        <img class="header__logo" src="/public/icons/logo.svg" alt="logo">
+        </a>
+        <a>
+        <img class="header__logo--menu" src="/public/icons/Hamburger.svg" alt="logo"
+        
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-bind:class="{'menu--open': menuIsOpen}"
+      id="mainNav" 
+      class="menu"
+      >
+        
+    <img class="header__close" src="/public/icons/Close.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+            
+    <ul class="menu__list">
+      <li><a class="menu__list--element" href="/architecte.html">Sou Fujimoto</a></li>
+      <li><a class="menu__list--element" href="/galerie.html">Œuvres architecturales</a></li>
+      <li><a class="menu__list--element" href="/Infos.html">Infos</a></li>
+      <li><a class="menu__list--element" href="/contact.html">Contact</a></li>
+  </ul>
+    </nav>
+</header>
     <h1 class="infos__title">Infos</h1>
     <p class="infos__text">Découvrez nos tarifs abordables et les horaires flexibles qui vous permettront de plonger dans l'innovation architecturale à votre convenance</p>
     <div id="onglets" x-data="{

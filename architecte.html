@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architecte</title>
+    <title>Page d'accueil</title>
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="/src/css/vendors/styles.css">
 </head>
 <body>
-    <header>
-        <a href="/">
-        <img src="/public/icons/logo.svg" alt="logo">
+    <header class="header header--bg">
+        <a class="header__logo-link"href="/">
+        <img class="header__logo" src="/public/icons/logo.svg" alt="logo">
         </a>
-        <nav>
-            <button>
-                <span></span>
-            </button>
-            <ul>
-                <li><a href="/">Sou Fujimoto</a></li>
-                <li><a href="/">Œuvres architecturales</a></li>
-                <li><a href="/">Infos</a></li>
-            </ul>
-        </nav>
-    </header>
+        <a>
+        <img class="header__logo--menu" src="/public/icons/Hamburger.svg" alt="logo"
+        
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-bind:class="{'menu--open': menuIsOpen}"
+      id="mainNav" 
+      class="menu"
+      >
+        
+    <img class="header__close" src="/public/icons/Close.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+            
+    <ul class="menu__list">
+      <li><a class="menu__list--element" href="/architecte.html">Sou Fujimoto</a></li>
+      <li><a class="menu__list--element" href="/galerie.html">Œuvres architecturales</a></li>
+      <li><a class="menu__list--element" href="/Infos.html">Infos</a></li>
+      <li><a class="menu__list--element" href="/contact.html">Contact</a></li>
+  </ul>
+    </nav>
+</header>
+
     <main>
         <img class="architecte__img" src="/public/img/sou-fujimoto-architecte.webp" alt="Sou fujimoto">
        
