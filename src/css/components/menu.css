@@ -18,7 +18,33 @@
 
 .header__close{
     position: absolute; /* Ajouté - positionne l'élément par rapport à son conteneur le plus proche avec position: relative; ou position: absolute; */
-    right: 0; /* Ajouté - positionne l'élément à droite du conteneur */
+    right: 6%; /* Ajouté - positionne l'élément à droite du conteneur */
     padding: 2%;
+    height: 60px;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5rem;
+    margin-top: 10rem;
+}
+
+.menu__list--element {
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.header__logo--menu{
+    width: 100px;
     height: 50px;
 }

@@ -13,7 +13,7 @@
         <img class="header__logo" src="/public/icons/logo.svg" alt="logo">
         </a>
         <a>
-        <img class="header__logo" src="/public/icons/Hamburger.svg" alt="logo"
+        <img class="header__logo--menu" src="/public/icons/Hamburger.svg" alt="logo"
         
       aria-controls="mainNav" 
       @click="menuIsOpen = ! menuIsOpen"
@@ -29,9 +29,10 @@
     @click="menuIsOpen = ! menuIsOpen">
             
     <ul class="menu__list">
-      <li><a href="/">Sou Fujimoto</a></li>
-      <li><a href="/">Œuvres architecturales</a></li>
-      <li><a href="/">Infos</a></li>
+      <li><a class="menu__list--element" href="/">Sou Fujimoto</a></li>
+      <li><a class="menu__list--element" href="/">Œuvres architecturales</a></li>
+      <li><a class="menu__list--element" href="/">Infos</a></li>
+      <li><a class="menu__list--element" href="/">Contact</a></li>
   </ul>
       </nav>
     </header>
